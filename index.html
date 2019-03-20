@@ -1,0 +1,74 @@
+<!doctype HTML>
+<html lang="fr">
+
+<head>
+  <link rel="shortcut icon" href="favicon.ico">
+  <meta charset="utf-8">
+
+  <title>Devine à quel nombre je pense</title>
+  <meta name="description" content="Je pense à un nombre entre 1 et 100, devine lequel. Mais attention : tu n'as que 10 essais !">
+  <meta name="author" content="Chris, Sandra, Aurel">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body class="d-flex flex-column ">
+  <div id="back">
+  </div>
+  <div id="front">
+  </div>
+
+  <header class="container-fluid">
+    <div class="row justify-content-center">
+      <h1 class="col-sm-10 col-md-8">Devine à quel nombre je pense </h1>
+    </div>
+    <div class="row justify-content-end">
+      <h2 class="col-sm-5 col-md-4 ">entre 1 et 100 !</h2>
+    </div>
+  </header>
+  <section class="container-fluid">
+    <div class="container">
+      <div class="row d-flex justify-content-around" id="jeu">
+        <div class="col-md-6 " id="div1">
+
+        </div>
+        <div class="col-md-6" id="div2">
+
+        </div>
+        <button type="button" name="button" id="jouer" value="Jouer" class="col-sm-9 col-md-6 col-lg-5 btn">Jouer !</button>
+      </div>
+    </div>
+  </section>
+  <section class="container-fluid" id="attention">
+    <h3 class="row justify-content-center">Attention:</h3>
+    <h3 class="row justify-content-center">Il reste &nbsp;<span id="nbEssais">0</span>&nbsp; essai(s) </h3>
+  </section>
+  <footer class="container-fluid">
+    <div class="row" id="designBy">
+      <div class="col-md-6 ">
+        <h4>Design by</h4>
+        <ul>
+          <li>Sandra</li>
+          <li>Aurélien</li>
+          <li>Christian</li>
+        </ul>
+      </div>
+      <div class="col-md-6 ">
+        <h4>Technologies utilisées</h4>
+        <ul>
+          <li>JavaScript</li>
+          <li>Bootstrap</li>
+          <li>Sass</li>
+        </ul>
+
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/scripts.js"></script>
+</body>
+
+</html>

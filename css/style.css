@@ -1,0 +1,238 @@
+@font-face {
+  font-family: "Univers";
+  src: url("../fonts/UniversCondensed.ttf") format("truetype");
+}
+
+body {
+  font-family: "Univers";
+  color: yellow;
+  height: 100%;
+  background: linear-gradient(#0d3253, #00040e);
+  position: relative;
+}
+
+body ul li {
+  list-style-type: none;
+}
+
+body header {
+  margin-bottom: 2%;
+}
+
+body header h1 {
+  font-size: 4em;
+  text-shadow: 3px 3px #000000;
+  padding-top: 2.5%;
+}
+
+body header h2 {
+  font-size: 3em;
+  text-shadow: 2px 2px #000000;
+  padding-bottom: 2.2%;
+}
+
+body #jeu #div1 {
+  background-color: rgba(0, 0, 0, 0.95);
+  padding: 0;
+  text-align: center;
+  border: 0;
+  transition: all 0.3s ease 0s;
+  border-radius: 0.1rem;
+}
+
+body #jeu #div1 #formElt {
+  display: flex;
+  flex-direction: column;
+}
+
+body #jeu #div1 #formElt #reponse {
+  width: 50%;
+  margin: 6% 25% 3%;
+}
+
+body #jeu #div1 #formElt #valider {
+  width: 50%;
+  margin: 3% 25% 5%;
+  background-color: rgba(200, 140, 0, 0.7);
+
+  color: #FFF;
+  display: inline-block;
+  text-shadow: 1px 1px #000000;
+  font-size: 1.5em;
+  text-align: center;
+  border: 0;
+  transition: all 0.3s ease 0s;
+  padding: 0rem;
+  border-radius: 0rem;
+}
+
+body #jeu #div1 #formElt #valider:hover {
+  background-color: #ffb400;
+  font-size: 35px;
+}
+
+body #jeu #div1 #bonneReponse {
+  font-size: 3.1em;
+}
+
+body #jeu #div1 #gameOver {
+  font-size: 3.5em;
+  color: #F00;
+}
+
+body #jeu #div2 {
+  background-color: rgba(0, 0, 0, 0.95);
+  padding: 0;
+  text-align: center;
+  border: 0;
+  transition: all 0.3s ease 0s;
+  border-radius: 0.1rem;
+  font-size: 1.3em;
+}
+
+body #attention {
+  margin: 2% 0;
+}
+
+body #attention h3 {
+  font-size: 1.7em;
+  text-shadow: 1px 1px #000000;
+  padding: 0.5% 0;
+}
+
+body footer {
+  color: white;
+  background-color: black;
+  padding: 1% 0 0;
+  text-align: center;
+}
+
+body footer h4 {
+  font-size: 1.3em;
+  text-shadow: 1px 1px grey;
+}
+
+.btn {
+  background-color: rgba(200, 140, 0, 0.7);
+  color: #FFF;
+  display: inline-block;
+  text-shadow: 5px 5px #000000;
+  font-size: 3.5em;
+  margin: 25px;
+  text-align: center;
+  border: 0;
+  transition: all 0.3s ease 0s;
+  padding: 0rem;
+  border-radius: 0rem;
+}
+
+.btn:hover {
+  background-color: #ffb400;
+  font-size: 4em;
+  transform: rotate(-4deg);
+}
+
+.btn:active {
+  outline: none;
+}
+
+@-webkit-keyframes backgroundAnimate {
+  from {
+    left: 0;
+    top: 0;
+  }
+
+  to {
+    left: -10000px;
+  }
+}
+
+@-moz-keyframes backgroundAnimate {
+  from {
+    left: 0;
+    top: 0;
+  }
+
+  to {
+    left: -10000px;
+  }
+}
+
+@-o-keyframes backgroundAnimate {
+  from {
+    left: 0;
+    top: 0;
+  }
+
+  to {
+    left: -10000px;
+  }
+}
+
+@keyframes backgroundAnimate {
+  from {
+    left: 0;
+    top: 0;
+  }
+
+  to {
+    left: -10000px;
+  }
+}
+
+#back {
+  background: url("../img/back.png") repeat 20% 20%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.4;
+  z-index: -1;
+  animation-name: backgroundAnimate;
+  animation-duration: 80s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+#front {
+  background: url("../img/front.png") repeat 35% 35%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.6;
+  z-index: -1;
+  animation-name: backgroundAnimate;
+  animation-duration: 40s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@media screen and (min-height: 850px) {
+  footer {
+    position: absolute;
+    bottom: 0;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  body {
+    font-size-adjust: 0.4;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  body {
+    font-size-adjust: 0.35;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  body {
+    font-size-adjust: 0.3;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
